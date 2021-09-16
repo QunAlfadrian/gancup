@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ganesha Cup 2021</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <link rel="icon" href="assets/img/gancup/gancup-logo.png">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="apple-touch-icon" href="assets/img/gancup/gancup-logo.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- css file -->
+  <style>
+    /*  ========== GENERAL =========  */
+    h2 {
+        font-weight: 600;
+        font-size: 36px !important;
+        margin-bottom: 10px;
+        color: #FCCB51;
+      }
+
+    /*  ========== NAVBAR ==========  */
+    .navbar a {
+      color: #fff !important;
+    }
+
+    /*  ========== SLIDERS ==========  */
+    #hero .slide-1 .teks {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+    }
+    #hero .slide-1 h2 {
+      line-height: 90%;
+    }
+    #hero .slide-1 .daftar {
+      width: 100px;
+      text-align: center !important;
+      margin-left: 0;
+    }
+    #hero .slide-2 h2 {
+      color: #FCCB51;
+    }
+
+    /* ========== TIMELINE ========== */
+    #about .timeline p {
+      color: #fff;
+    }
+
+    .timeline {
+          border-left: 3px solid #FCCB51;
+          border-bottom-right-radius: 4px;
+          border-top-right-radius: 4px;
+          background: RGBA(40,44,52, 0.2);
+          margin: 0 auto;
+          letter-spacing: 0.2px;
+          position: relative;
+          line-height: 1.4em;
+          font-size: 1.03em;
+          padding: 50px;
+          list-style: none;
+          text-align: left;
+          max-width: 40%;
+      }
+
+      @media (max-width: 767px) {
+          .timeline {
+              max-width: 98%;
+              padding: 25px;
+          }
+      }
+
+      .timeline h1 {
+          font-weight: 300;
+          font-size: 1.4em;
+          color: #fff;
+      }
+
+      .card-body h2,
+      .card-body h3 {
+          font-weight: 600;
+          font-size: 1rem;
+          margin-bottom: 10px;
+          color: #fff;
+      }
+
+      .card-body h2 {
+        font-size: 36px !important;
+        color: #FCCB51;
+      }
+
+      .card-body .event {
+          border-bottom: 1px dashed #FCCB51;
+          /* border-bottom: 1px dashed RGB(40,44,52); */
+          padding-bottom: 25px;
+          margin-bottom: 25px;
+          position: relative;
+      }
+
+      @media (max-width: 767px) {
+          .timeline .event {
+              padding-top: 30px;
+          }
+      }
+
+      .card-body .event:last-of-type {
+          padding-bottom: 0;
+          margin-bottom: 0;
+          border: none;
+      }
+
+      .card-body .event:before,
+      .card-body .event:after {
+          position: absolute;
+          display: block;
+          top: 0;
+      }
+
+      .card-body .event:before {
+          left: -207px;
+          content: attr(data-date);
+          text-align: right;
+          font-weight: 100;
+          font-size: 0.9em;
+          min-width: 120px;
+          color: #fff;
+      }
+
+      .card-body .elimination:before {
+        content: attr(data-date) "\a" attr(data-date2);
+        white-space: pre;
+      }
+
+      @media (max-width: 767px) {
+          .timeline .event:before {
+              left: 0px;
+              text-align: left;
+          }
+      }
+
+      @media (max-width:767px) {
+        .card-body .elimination:before {
+          content: attr(data-date) " - " attr(data-date2);
+        }
+      }
+
+      .card-body .event:after {
+          -webkit-box-shadow: 0 0 0 3px #FCCB51;
+          box-shadow: 0 0 0 3px #FCCB51;
+          left: -55.8px;
+          background: #363344;
+          border-radius: 50%;
+          height: 9px;
+          width: 9px;
+          content: "";
+          top: 5px;
+      }
+
+      @media (max-width: 767px) {
+          .timeline .event:after {
+              left: -31.8px;
+          }
+      }
+
+      .rtl .card-body {
+          border-left: 0;
+          text-align: right;
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0;
+          border-bottom-left-radius: 4px #FCCB51;
+          border-top-left-radius: 4px #FCCB51;
+          border-right: 3px solid #FCCB51;
+      }
+
+      .rtl .card-body .event::before {
+          left: 0;
+          right: -170px;
+      }
+
+      .rtl .card-body .event::after {
+          left: 0;
+          right: -55.8px;
+      }
+      
+      /* ========== LIVE MATCH ========== */
+      .features h2 {
+        margin-left: auto;
+        text-align: center;
+      }
+
+      /* ========== JUKLAK ========== */
+      .juklak-item, .contact-item{
+        width: 375px;
+      }
+
+  </style>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">GaneshaCup</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Timeline</a></li>
+          <li><a class="nav-link scrollto" href="#features">Live</a></li>
+          <li><a class="nav-link scrollto" href="#juklak">Juklak</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column">
+  <!-- <section id="hero" class="d-flex flex-column justify-content-end align-items-center"> -->
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active slide-1">
+        <div class="carousel-container">
+          <div class="row">
+            <img class="col-md-4 animate__animated animate__fadeInDown" src="assets/img/gancup/gancup-logo.png" alt="">
+            <div class="col-md-8 teks">
+              <h2 class="animate__animated animate__fadeInDown">Ganesha Cup <br><span style="color: #FCCB51;">2021</span></h2>
+              <p style="text-transform: capitalize;">Burn your spirit, <br>Light up the space</p>
+              <a href="https://forms.gle/ddHiTy2K2DfgYjw69" class="btn-get-started animate__animated animate__fadeInUp scrollto daftar" target="_blank">DAFTAR</a>
+            </div>
+          </div>
+          <!-- <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Selecao</span></h2> -->
+          <!-- <p class="animate__animated fanimate__adeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
+          <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item slide-2">
+        <div class="carousel-container">
+          <div>
+            <h2 class="animate__animated animate__fadeInDown">Apa itu Ganesha Cup?</h2>
+            <div class="garis animate__animated animate__fadeInDown" style="height: 7px; width: 300px; background-color: #fff; border-radius: 5px; margin-bottom: 10px;"></div>
+          </div>
+          <div class="description">
+            <p class="animate__animated animate__fadeInUp">Ganesha  Cup  adalah  ajang  perlombaan  yang  diadakan  oleh  OSIS  SMA 
+              Negeri 3 Semarang. Ajang perlombaan ini terdiri dari berbagai macam bidang 
+              olahraga  seperti  Turnamen  Futsal,  Basket  Turnamen,  Dance  Competition, 
+              Cheerleading    Competition,  dan  masih  banyak  lagi.  Tentunya  perlombaan 
+              Ganesha Cup juga terbuka bagi khalayak umum. Pada tahun ini Ganesha Cup 
+              memiliki warna yang baru yaitu membuka perlombaan pada cabang olahraga 
+              e-sport  yang  dibuka  se  Jawa  Tengah.  Lomba  e-sport  yang  diadakan  oleh 
+              Ganesha Cup yaitu Mobile Legends dan PUBG. Jadi persiapkan dirimu untuk 
+              berpartisipasi dalam Ganesha Cup 2021!</p>
+          </div>
+          <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#363344">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Timeline Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="card-body" data-aos="zoom-out">
+          <div class="timeline-title">
+            <h2 class="card-title" style="text-align: center;">Timeline</h2>
+            <div class="garis card-title" style="height: 7px; width: 150px; background-color: #fff; border-radius: 5px; margin-bottom: 10px; margin-left: auto; margin-right: auto;"></div>
+            <br>
+          </div>
+
+          <div id="content">
+            <ul class="timeline">
+              <li class="event" data-date="21 Aug 2021">
+                <h3>Open Registration</h3><br>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente pariatur rem quis ipsum reprehenderit, sint tempore recusandae cum dolores.</p> -->
+              </li>
+              <li class="event" data-date="28 Aug 2021">
+                <h3>Close Registration</h3><br>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officiis accusamus debitis eveniet laboriosam eos!</p> -->
+              </li>
+              <li class="event" data-date="17 Sept 2021">
+                <h3>Elimination Mobile Legends 256 Teams</h3><br>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores harum? Deserunt ut libero eveniet. Beatae amet ipsa sed quas quae aut hic veniam dolores?</p> -->
+              </li>
+              <li class="event elimination" data-date="18 Sept 2021" data-date2="19 Sept 2021">
+                <h3>Elimination Mobile Legends 8 Teams</h3><br>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laborum alias dolorum esse, dolor aperiam quia ratione id cum nam?</p> -->
+              </li>
+              <li class="event" data-date="24 Sept 2021">
+                <h3>Elimination PUBG 100 Teams</h3><br>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laborum alias dolorum esse, dolor aperiam quia ratione id cum nam?</p> -->
+              </li>
+              <li class="event elimination" data-date="25 Sept 2021" data-date2="26 Sept 2021">
+                <h3>Elimination PUBG 24 Teams</h3><br>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laborum alias dolorum esse, dolor aperiam quia ratione id cum nam?</p> -->
+              </li>
+              <li class="event elimination" data-date="2 Okt 2021" data-date2="3 Okt 2021">
+                <h3>Elimination Mobile Legends 6 Teams</h3><br>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laborum alias dolorum esse, dolor aperiam quia ratione id cum nam?</p> -->
+              </li>
+              <li class="event" data-date="16 Okt 2021">
+                <h3>Final Mobile Legends</h3><br>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laborum alias dolorum esse, dolor aperiam quia ratione id cum nam?</p> -->
+              </li>
+              <li class="event" data-date="17 Okt 2021">
+                <h3>Final PUBG</h3><br>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laborum alias dolorum esse, dolor aperiam quia ratione id cum nam?</p> -->
+              </li>
+              </ul>
+            </div>
+          </div>
+
+      </div>
+    </section><!-- End Timeline Section -->
+
+    <!-- ======= Live Video Section ======= -->
+    <!-- <section id="features" class="features">
+      <div class="container">
+        
+        <div class="live-match" data-aos="zoom-out">
+          <h2>Live Match</h2>
+          <div class="garis" style="height: 7px; width: 150px; background-color: #fff; border-radius: 5px; margin-bottom: 10px; margin-left: auto; margin-right: auto;"></div>
+          <br>
+          <div class="video">
+            <iframe width="100%" height="500px" src="" frameborder="0"></iframe>
+          </div>
+        </div>
+        
+
+      </div>
+    </section> -->
+    <!-- End Live Video Section -->
+    
+    <!-- ======= News Section ======= -->
+    <!-- <section id="services" class="services">
+      <div class="container">
+        
+        <div class="news-title" data-aos="zoom-out">
+          <h2 style="text-align: center;">News</h2>
+          <div class="garis card-title" style="height: 7px; width: 100px; background-color: #fff; border-radius: 5px; margin-bottom: 10px; margin-left: auto; margin-right: auto;"></div>
+          <br>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="zoom-in-left">
+              <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-book" style="color: #e9bf06;"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-card-checklist" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="300">
+              <div class="icon"><i class="bi bi-binoculars" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="400">
+              <div class="icon"><i class="bi bi-globe" style="color: #d6ff22;"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="500">
+              <div class="icon"><i class="bi bi-clock" style="color: #4680ff;"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section> -->
+    <!-- End News Section -->
+    
+    <!-- ======= Faq Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-out">
+          <div class="faq-title">
+            <h2>FAQ</h2>
+            <div class="garis card-title" style="height: 7px; width: 100px; background-color: #fff; border-radius: 5px; margin-bottom: 10px;"></div>
+            <br>
+          </div>
+
+          <div class="col-lg-6">
+            <p>Temukan pertanyaan-pertanyaan yang sering ditanyakan pada Ganesha Cup di Frequently Asked Questions</p>
+            <a class="cta-btn" href="https://drive.google.com/file/d/1LPJS6sBAN8spVFTxz7V-FTbvXySZwKK6/view?usp=sharing" target="_blank">Download</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Faq Section -->
+
+    <!-- =======Juklak Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" id="juklak">
+
+        <div class="contact-title" data-aos="zoom-out">
+          <h2>Petunjuk Pelaksanaan</h2>
+          <div class="garis card-title" style="height: 7px; width: 100px; background-color: #fff; border-radius: 5px; margin-bottom: 10px;"></div>
+          <br>
+        </div>
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="juklak-item">
+              <div class="testimonial-item">
+                <h3>Divisi PUBG</h3>
+                <div class="contact-line" style="height: 2px; width: 50px; background-color: #FCCB51; margin-left: auto; margin-right: auto;"></div>
+                <br>
+                <a class="cta-btn" href="https://drive.google.com/file/d/1-N_Jph4wE41ysSVF2xnc-_XPIsldzn1b/view?usp=sharing" target="_blank">View</a>
+              </div>
+            </div><!-- End juklak item -->
+
+            <div class="juklak-item">
+              <div class="testimonial-item">
+                <h3>Divisi Mobile Legends</h3>
+                <div class="contact-line" style="height: 2px; width: 50px; background-color: #FCCB51; margin-left: auto; margin-right: auto;"></div>
+                <br>
+                <a class="cta-btn" href="https://drive.google.com/file/d/1-QYXBEdyR4pPkwlN81zO2_f5dSHOPDzv/view?usp=sharing" target="_blank">View</a>
+              </div>
+            </div><!-- End juklak item -->
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Juklak Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" id="contact">
+
+        <div class="contact-title" data-aos="zoom-out">
+          <h2>Contact Us</h2>
+          <div class="garis card-title" style="height: 7px; width: 100px; background-color: #fff; border-radius: 5px; margin-bottom: 10px;"></div>
+          <br>
+        </div>
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up">
+          <div class="swiper-wrapper">
+
+            <div class="contact-item">
+              <div class="testimonial-item">
+                <h3>Phone</h3>
+                <div class="contact-line" style="height: 2px; width: 50px; background-color: #FCCB51; margin-left: auto; margin-right: auto;"></div>
+                <br>
+                <h4>081932759841 (Mobile Legends)</h4>
+                <h4>089539339754 (PUBG)</h4>
+              </div>
+            </div><!-- End contact item -->
+
+            <div class="contact-item">
+              <div class="testimonial-item">
+                <h3>E-Mail</h3>
+                <div class="contact-line" style="height: 2px; width: 50px; background-color: #FCCB51; margin-left: auto; margin-right: auto;"></div>
+                <br>
+                <h4>ganeshacup2021@gmail.com</h4>
+              </div>
+            </div><!-- End contact item -->
+
+            <div class="contact-item">
+              <div class="testimonial-item">
+                <h3>Instagram</h3>
+                <div class="contact-line" style="height: 2px; width: 50px; background-color: #FCCB51; margin-left: auto; margin-right: auto;"></div>
+                <br>
+                <h4>@ganeshacupofficial</h4>
+              </div>
+            </div><!-- End contact item -->
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>GaneshaCup2021</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/selecao-bootstrap-template/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
